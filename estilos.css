@@ -1,0 +1,94 @@
+/* General del menú */
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 20px auto;
+    width: 100%;
+    font-family: Georgia, sans-serif;
+    background-color: #51c3c4;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Estilo de las opciones principales */
+.menu > li {
+    position: relative;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.menu > li:last-child {
+    border-bottom: none;
+}
+
+.titulo {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    background-color: #51c3c4;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+}
+
+.titulo:hover {
+    background-color: #a1ecec;
+    color: black;
+}
+
+/* Submenús */
+.submenu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    background-color: #51c3c4;
+    border-left: 3px solid #51c3c4;
+}
+
+.submenu > li {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.submenu > li:last-child {
+    border-bottom: none;
+}
+
+.subtitulo {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #555555;
+    font-weight: normal;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.subtitulo:hover {
+    background-color: #a1ecec;
+    color: black;
+}
+
+/* Subopciones */
+.submenu .submenu {
+    padding-left: 20px;
+    background-color: #ffffff;
+    border-left: 10px;
+}
+
+/* Opciones dentro de submenús */
+.submenu .submenu > li {
+    padding: 10px 20px;
+}
+
+.submenu .submenu > li a {
+    text-decoration: none;
+    color: #333333;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.submenu .submenu > li a:hover {
+    color: #007BFF;
+}
